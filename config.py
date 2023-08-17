@@ -1,0 +1,11 @@
+"""
+For example :
+
+USERNAME = "QatoufAlKhamis"
+
+PASSWORD = "123123123"
+
+"""
+USERNAME = "USERNAME"
+
+PASSWORD = "PASSWORD"

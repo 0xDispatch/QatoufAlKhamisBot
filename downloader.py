@@ -30,7 +30,7 @@ class VideoDownloader:
             video_url = f"https://youtu.be/{id}"
             yt = YouTube(video_url)
             video_stream = yt.streams.get_highest_resolution()
-            video_stream.download(download_path)
-            return download_path
+            video_path = video_stream.download(download_path)
+            return video_path
         except Exception as e:
             return f'Error: {e}'

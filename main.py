@@ -33,8 +33,8 @@ def tweet_random_video():
     logging.info(f"Selected video: {random_video}")
     
     # Download the video to the download directory
-    result = video_downloader.download_vid(random_video["id"], download_dir)
-    media = [os.path.join(result, f"{random_video['title']}.mp4")]
+    video_path = video_downloader.download_vid(random_video["id"], download_dir)
+    media = [video_path]
     
     # Create the tweet text with the video, title and link
     text = f"""
